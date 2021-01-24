@@ -1,8 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +18,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
