@@ -1,21 +1,11 @@
-import logo from './logo.svg';
-// import Button from '@material-ui/core/Button';
-
+import { Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <Button
-          variant="contained"
-          style={{
-            background: 'red',
-            color: 'white',
-          }}
-        >
-          Click Me!
-        </Button> */}
-      </header>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
     </div>
   );
 };

@@ -1,0 +1,44 @@
+.hero {
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+
+  .hero-text {
+    padding: 100px 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  }
+  h1,
+  h2 {
+    margin: 0;
+    font-size: 3.2rem;
+    color: $honeydew;
+  }
+  p {
+    color: $powder-blue;
+    font-size: 2.4rem;
+    margin: 20px 0;
+  }
+}
+
+.papers {
+  background-image: url('../../assets/papers.jpg');
+}
+
+.redshirt {
+  background-image: url('../../assets/red-shirt.jpg');
+}
+
+@media (max-width: 600px) {
+  .hero {
+    justify-content: center;
+    .hero-text {
+      padding: 50px;
+      p {
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}
