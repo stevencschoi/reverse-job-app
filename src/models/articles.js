@@ -5,7 +5,7 @@ import Roommates from '../assets/roommates.jpg';
 export const articles = [
   {
     title: `Empower small business`,
-    desc: `Stimulate the local economy by keeping Steven's chequing account positive.`,
+    desc: `Stimulate the local economy by keeping Steven's account balance positive.`,
     img: Coffee,
     alt: 'coffee shop barista taking phone order',
   },
