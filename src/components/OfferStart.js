@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FormControl, InputLabel, Input, Button } from '@material-ui/core';
 
+import { useAppData } from './hooks/useAppData';
+
 const OfferStart = () => {
+  const { data, handleInput, login } = useAppData();
+
   return (
     <main>
       <div className="wrapper">
@@ -13,8 +17,8 @@ const OfferStart = () => {
         </nav>
         <h2>Enter your email</h2>
         <FormControl>
-          <InputLabel htmlFor="email">Email address</InputLabel>
-          <Input name="email" id="email" />
+          <InputLabel htmlFor="user">Email address</InputLabel>
+          <Input name="user" id="user" onChange={(e) => handleInput(e)} />
           <Button type="submit">Next</Button>
         </FormControl>
       </div>
