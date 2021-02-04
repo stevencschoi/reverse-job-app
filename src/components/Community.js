@@ -8,7 +8,11 @@ const Community = () => {
       <h2>Build a better tomorrow</h2>
       <p>Make Steven's network thrive with trickle down economics</p>
       {articles.map((article, index) => {
-        return <Article article={article} alignRight={index % 2 !== 0 ? true : false} />;
+        return (
+          <React.Fragment key={index}>
+            <Article article={article} alignRight={index % 2 !== 0 ? true : false} />
+          </React.Fragment>
+        );
       })}
     </section>
   );

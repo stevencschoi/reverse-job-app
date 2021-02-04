@@ -16,11 +16,13 @@ const OfferStart = () => {
           </Link>
         </nav>
         <h2>Enter your email</h2>
-        <FormControl>
+        <form onSubmit={(e) => e.preventDefault()}>
           <InputLabel htmlFor="user">Email address</InputLabel>
           <Input name="user" id="user" onChange={(e) => handleInput(e)} />
-          <Button type="submit">Next</Button>
-        </FormControl>
+          <button type="submit" onClick={() => login(data.user)}>
+            Next
+          </button>
+        </form>
       </div>
     </main>
   );
